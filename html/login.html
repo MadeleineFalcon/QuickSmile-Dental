@@ -44,7 +44,40 @@
 
 <section class="main">
 <!--code here-->
+<!-- Login Form -->
+<section class="main d-flex justify-content-center align-items-center" style="min-height: 100vh; padding-top: 100px;">
+  <div class="card p-4 shadow" style="max-width: 400px; width: 100%; border-radius: 16px;">
+    <div class="text-center">
+      <img src="../assets/tooth.jpg" alt="QuickSmile Logo" style="width: 60px; height: 60px; object-fit: contain; border-radius: 50%; margin-bottom: 20px;" />
+      <h2 class="fw-bold">QuickSmile Dental</h2>
+      <p class="text-muted mb-4">Welcome back! Please sign in to your account</p>
+    </div>
+    
+    <!-- ✅ Redirects to profile.html -->
+    <form action="profile.html" method="get">
+      <div class="mb-3">
+        <label for="email" class="form-label">Email Address</label>
+        <input type="email" class="form-control" id="email" placeholder="user@gmail.com" required>
+      </div>
+      <div class="mb-3">
+        <label for="password" class="form-label">Password</label>
+        <input type="password" class="form-control" id="password" placeholder="Enter your password" required>
+      </div>
+      <div class="d-flex justify-content-between align-items-center mb-3">
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" id="rememberMe">
+          <label class="form-check-label" for="rememberMe">Remember me</label>
+        </div>
+        <a href="#" class="text-decoration-none" style="font-size: 13px;">Forgot password?</a>
+      </div>
+      <button type="submit" class="btn btn-primary w-100 mb-2">Sign In</button>
+      <button type="button" class="btn btn-outline-primary w-100" onclick="window.location.href='register.html'">Sign Up here</button>
+    </form>
 
+    <div class="text-center text-muted mt-4" style="font-size: 12px;">
+      © 2025 QuickSmile Dental. All rights reserved.
+    </div>
+  </div>
         
 </section>
 <script src="../script.js"></script>

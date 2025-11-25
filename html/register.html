@@ -43,6 +43,79 @@
 
 <section class="main">
 <!--code here-->
+<!-- Registration Form -->
+<section class="main d-flex justify-content-center align-items-center">
+  <div class="card shadow p-4" style="max-width: 720px; width: 100%;">
+    <div class="text-center mb-4">
+         <img src="../assets/tooth.jpg" alt="QuickSmile Logo" style="width: 60px; height: 60px; object-fit: contain; border-radius: 50%; margin-bottom: 20px;" />
+      <h2 class="fw-bold mt-2">QuickSmile Dental</h2>
+      <p class="text-muted">New Patient Registration</p>
+    </div>
+
+    <form>
+      <h5 class="mb-3 fw-semibold">🧍 Personal Information</h5>
+      <div class="row">
+        <div class="col-md-6 mb-3">
+          <label for="fullName" class="form-label">Full Name</label>
+          <input type="text" class="form-control" id="fullName" required>
+        </div>
+        <div class="col-md-6 mb-3">
+          <label for="dob" class="form-label">Date of Birth</label>
+          <input type="date" class="form-control" id="dob" required>
+        </div>
+        <div class="col-md-6 mb-3">
+          <label for="email" class="form-label">Email Address</label>
+          <input type="email" class="form-control" id="email" required>
+        </div>
+        <div class="col-md-6 mb-3">
+          <label for="phone" class="form-label">Phone Number</label>
+          <input type="tel" class="form-control" id="phone" required>
+        </div>
+        <div class="col-12 mb-4">
+          <label for="address" class="form-label">Home Address</label>
+          <input type="text" class="form-control" id="address" required>
+        </div>
+      </div>
+
+      <h5 class="mb-3 mt-4 fw-semibold">🛡️ Insurance Information</h5>
+      <div class="row">
+        <div class="col-md-6 mb-3">
+          <label for="provider" class="form-label">Insurance Provider</label>
+          <select class="form-select" id="provider" required>
+            <option selected disabled value="">Select your insurance provider</option>
+            <option>Aetna</option>
+            <option>Blue Cross</option>
+            <option>Cigna</option>
+          </select>
+        </div>
+        <div class="col-md-6 mb-3">
+          <label for="policyNumber" class="form-label">Insurance Policy Number</label>
+          <input type="text" class="form-control" id="policyNumber" required>
+        </div>
+        <div class="col-12 mb-4">
+          <label for="documents" class="form-label">Upload Insurance Document</label>
+          <input type="file" class="form-control" id="documents" accept=".jpg,.jpeg,.png,.pdf">
+          <small class="text-muted">Supports JPG, PNG, PDF up to 10MB</small>
+        </div>
+      </div>
+
+      <div class="form-check bg-light p-3 rounded mb-3">
+        <input class="form-check-input" type="checkbox" id="consent" required>
+        <label class="form-check-label" for="consent">
+          I understand that dental treatment may involve risks and I consent to the necessary treatment.
+          I also agree to the <a href="#">Privacy Policy</a> and <a href="#">Terms of Service</a>.
+        </label>
+      </div>
+
+      <button type="submit" class="btn btn-primary w-100">Create Account & Schedule Appointment</button>
+
+      <p class="text-center mt-3">Already have an account? <a href="login.html">Sign in here</a></p>
+    </form>
+
+    <p class="text-center text-muted mt-4 mb-0" style="font-size: 13px;">
+      © 2025 QuickSmile Dental. Your smile is our priority.
+    </p>
+  </div>
 </section>
 <script src="../script.js"></script>
 
