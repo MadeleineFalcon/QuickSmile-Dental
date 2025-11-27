@@ -1,51 +1,370 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <title>Services</title>
-    <!--font-->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    <!--bootstrap-->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
-    <!--style-->
-    <link rel="stylesheet" href="../css/services.css">
-    <link rel="stylesheet" href="../style.css">
-</head>
-<body>
-<!--Navigation-->
-<!--Navigation-->
-<nav class="navbar fixed-top">
-  <div class="container-fluid">
-    <a class="navbar-brand d-flex align-items-center" href="home.html">
-      <img src="../assets/tooth.jpg" alt="Logo" height="40">
-      <span class="ms-3 company-name">QuickSmile<br>Dental</span>
-    </a>
-    <ul class="navbar-nav mx-auto flex-row ps-5">
-      <li class="nav-item">
-        <a class="nav-link" href="home.html">Home</a>
-      </li>
-      <li class="nav-item active">
-        <a class="nav-link" href="services.html">Services</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="ourTeam.html">Our Team</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" id="book" href="loginBook.html">Book</a>
-      </li>
-    </ul>
-    <ul class="navbar-nav ms-auto">
-      <li class="nav-item">
-        <a class="nav-link login-btn" id="signIn" href="login.html">Login</a>
-      </li>
-    </ul>
-  </div>
-</nav>
 
-<section class="main">
-<!--code here-->
-</section>
-<script src="../script.js"></script>
-  </body>
-  </html>
+<head>
+  <title>Services</title>
+  <!--font-->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <!--bootstrap-->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!--style-->
+  <link rel="stylesheet" href="../css/services.css">
+  <link rel="stylesheet" href="../style.css">
+</head>
+
+<body>
+  <!--Navigation-->
+  <!--Navigation-->
+  <nav class="navbar fixed-top">
+    <div class="container-fluid">
+      <a class="navbar-brand d-flex align-items-center" href="home.html">
+        <img src="../assets/tooth.jpg" alt="Logo" height="40">
+        <span class="ms-3 company-name">QuickSmile<br>Dental</span>
+      </a>
+      <ul class="navbar-nav mx-auto flex-row ps-5">
+        <li class="nav-item">
+          <a class="nav-link" href="home.html">Home</a>
+        </li>
+        <li class="nav-item active">
+          <a class="nav-link" href="services.html">Services</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="ourTeam.html">Our Team</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" id="book" href="loginBook.html">Book</a>
+        </li>
+      </ul>
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item">
+          <a class="nav-link login-btn" id="signIn" href="login.html">Login</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <section class="main">
+    <!--code here-->
+    <section class="services-hero">
+      <div class="container text-center">
+        <h1 class="fw-semibold mb-3 text-white">Our Dental Services</h1>
+        <p class="lead mx-auto mb-4 text-white" style="max-width: 1024px;">We offer a comprehensive range of dental
+          services to meet
+          all your oral health needs. From preventive care to advanced treatments, our experienced team is here to help.
+        </p>
+        <a href="loginBook.html" class="appointment-btn">
+          <span class="icon">📅</span>Book an Appointment
+        </a>
+      </div>
+    </section>
+    <section class="services-list py-5">
+      <div class="container">
+        <div class="row g-4">
+          <div class="col-md-6">
+            <div class="service-card">
+              <div class="icon-box">
+                <span class="icon"><svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="#000000"
+                    viewBox="0 0 256 256">
+                    <path
+                      d="M220,160a12,12,0,1,1-12-12A12,12,0,0,1,220,160Zm-4.55,39.29A48.08,48.08,0,0,1,168,240H144a48.05,48.05,0,0,1-48-48V151.49A64,64,0,0,1,40,88V40a8,8,0,0,1,8-8H72a8,8,0,0,1,0,16H56V88a48,48,0,0,0,48.64,48c26.11-.34,47.36-22.25,47.36-48.83V48H136a8,8,0,0,1,0-16h24a8,8,0,0,1,8,8V87.17c0,32.84-24.53,60.29-56,64.31V192a32,32,0,0,0,32,32h24a32.06,32.06,0,0,0,31.22-25,40,40,0,1,1,16.23.27ZM232,160a24,24,0,1,0-24,24A24,24,0,0,0,232,160Z">
+                    </path>
+                  </svg>
+                </span>
+              </div>
+              <h3 class="service-title">General Dentistry</h3>
+              <p class="service-desc">
+                Comprehensive oral health care including routine checkups, cleanings, and preventive care.
+              </p>
+              <ul class="service-list">
+                <li>Regular Checkups</li>
+                <li>Professional Cleanings</li>
+                <li>Cavity Fillings</li>
+                <li>Oral Cancer Screenings</li>
+              </ul>
+              <hr class="divider">
+              <div class="card-footer">
+                <span class="price">From $75</span>
+                <a href="#" class="book-link">Book Now</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-6">
+            <div class="service-card">
+              <div class="icon-box">
+                <span class="icon"><svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="#000000"
+                    viewBox="0 0 256 256">
+                    <path
+                      d="M197.58,129.06,146,110l-19-51.62a15.92,15.92,0,0,0-29.88,0L78,110l-51.62,19a15.92,15.92,0,0,0,0,29.88L78,178l19,51.62a15.92,15.92,0,0,0,29.88,0L146,178l51.62-19a15.92,15.92,0,0,0,0-29.88ZM137,164.22a8,8,0,0,0-4.74,4.74L112,223.85,91.78,169A8,8,0,0,0,87,164.22L32.15,144,87,123.78A8,8,0,0,0,91.78,119L112,64.15,132.22,119a8,8,0,0,0,4.74,4.74L191.85,144ZM144,40a8,8,0,0,1,8-8h16V16a8,8,0,0,1,16,0V32h16a8,8,0,0,1,0,16H184V64a8,8,0,0,1-16,0V48H152A8,8,0,0,1,144,40ZM248,88a8,8,0,0,1-8,8h-8v8a8,8,0,0,1-16,0V96h-8a8,8,0,0,1,0-16h8V72a8,8,0,0,1,16,0v8h8A8,8,0,0,1,248,88Z">
+                    </path>
+                  </svg>
+                </span>
+              </div>
+              <h3 class="service-title">Cosmetic Dentistry</h3>
+              <p class="service-desc">Enhance your smile with our advanced cosmetic dental procedures.</p>
+              <ul class="service-list">
+                <li>Teeth Whitening</li>
+                <li>Veneers</li>
+                <li>Bonding</li>
+                <li>Smile Makeovers</li>
+              </ul>
+              <hr class="divider">
+              <div class="card-footer">
+                <span class="price">From $200</span>
+                <a href="#" class="book-link">Book Now</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-6">
+            <div class="service-card">
+              <div class="icon-box">
+                <span class="icon"><svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="#000000"
+                    viewBox="0 0 256 256">
+                    <path
+                      d="M128,24A104,104,0,1,0,232,128,104.11,104.11,0,0,0,128,24Zm0,192a88,88,0,1,1,88-88A88.1,88.1,0,0,1,128,216ZM80,108a12,12,0,1,1,12,12A12,12,0,0,1,80,108Zm96,0a12,12,0,1,1-12-12A12,12,0,0,1,176,108Zm-1.07,48c-10.29,17.79-27.4,28-46.93,28s-36.63-10.2-46.92-28a8,8,0,1,1,13.84-8c7.47,12.91,19.21,20,33.08,20s25.61-7.1,33.07-20a8,8,0,0,1,13.86,8Z">
+                    </path>
+                  </svg>
+                </span>
+              </div>
+              <h3 class="service-title">Orthodontics</h3>
+              <p class="service-desc">
+                Straighten your teeth with traditional braces or clear aligners.
+              </p>
+              <ul class="service-list">
+                <li>Traditional Braces</li>
+                <li>Clear Aligners</li>
+                <li>Retainers</li>
+                <li>Bite Correction</li>
+              </ul>
+              <hr class="divider">
+              <div class="card-footer">
+                <span class="price">From $75</span>
+                <a href="#" class="book-link">Book Now</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-6">
+            <div class="service-card">
+              <div class="icon-box">
+                <span class="icon"><svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="#000000"
+                    viewBox="0 0 256 256">
+                    <path
+                      d="M248,80a28,28,0,1,0-51.12,15.77l-26.79,33L146,73.4a28,28,0,1,0-36.06,0L85.91,128.74l-26.79-33a28,28,0,1,0-26.6,12L47,194.63A16,16,0,0,0,62.78,208H193.22A16,16,0,0,0,209,194.63l14.47-86.85A28,28,0,0,0,248,80ZM128,40a12,12,0,1,1-12,12A12,12,0,0,1,128,40ZM24,80A12,12,0,1,1,36,92,12,12,0,0,1,24,80ZM193.22,192H62.78L48.86,108.52,81.79,149A8,8,0,0,0,88,152a7.83,7.83,0,0,0,1.08-.07,8,8,0,0,0,6.26-4.74l29.3-67.4a27,27,0,0,0,6.72,0l29.3,67.4a8,8,0,0,0,6.26,4.74A7.83,7.83,0,0,0,168,152a8,8,0,0,0,6.21-3l32.93-40.52ZM220,92a12,12,0,1,1,12-12A12,12,0,0,1,220,92Z">
+                    </path>
+                  </svg>
+                </span>
+              </div>
+              <h3 class="service-title">Dental Implants</h3>
+              <p class="service-desc">
+                Permanent tooth replacement solutions that look and feel natural.</p>
+              <ul class="service-list">
+                <li>Single Implants</li>
+                <li>Multiple Implants</li>
+                <li>Implant-Supported Bridge</li>
+                <li>All-on-4</li>
+              </ul>
+              <hr class="divider">
+              <div class="card-footer">
+                <span class="price">From $1,500</span>
+                <a href="#" class="book-link">Book Now</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-6">
+            <div class="service-card">
+              <div class="icon-box">
+                <span class="icon"><svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="#000000"
+                    viewBox="0 0 256 256">
+                    <path
+                      d="M208,40H48A16,16,0,0,0,32,56v56c0,52.72,25.52,84.67,46.93,102.19,23.06,18.86,46,25.27,47,25.53a8,8,0,0,0,4.2,0c1-.26,23.91-6.67,47-25.53C198.48,196.67,224,164.72,224,112V56A16,16,0,0,0,208,40Zm0,72c0,37.07-13.66,67.16-40.6,89.42A129.3,129.3,0,0,1,128,223.62a128.25,128.25,0,0,1-38.92-21.81C61.82,179.51,48,149.3,48,112l0-56,160,0Z">
+                    </path>
+                  </svg>
+                </span>
+              </div>
+              <h3 class="service-title">Restorative Dentistry</h3>
+              <p class="service-desc">Restore damaged or missing teeth to improve function and appearance.</p>
+              <ul class="service-list">
+                <li>Crowns & Bridges</li>
+                <li>Dentures</li>
+                <li>Root Canals</li>
+                <li>Tooth Extractions</li>
+              </ul>
+              <hr class="divider">
+              <div class="card-footer">
+                <span class="price">From $300</span>
+                <a href="#" class="book-link">Book Now</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-6">
+            <div class="service-card">
+              <div class="icon-box">
+                <span class="icon"><svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="#000000"
+                    viewBox="0 0 256 256">
+                    <path
+                      d="M92,140a12,12,0,1,1,12-12A12,12,0,0,1,92,140Zm72-24a12,12,0,1,0,12,12A12,12,0,0,0,164,116Zm-12.27,45.23a45,45,0,0,1-47.46,0,8,8,0,0,0-8.54,13.54,61,61,0,0,0,64.54,0,8,8,0,0,0-8.54-13.54ZM232,128A104,104,0,1,1,128,24,104.11,104.11,0,0,1,232,128Zm-16,0a88.11,88.11,0,0,0-84.09-87.91C120.32,56.38,120,71.88,120,72a8,8,0,0,0,16,0,8,8,0,0,1,16,0,24,24,0,0,1-48,0c0-.73.13-14.3,8.46-30.63A88,88,0,1,0,216,128Z">
+                    </path>
+                  </svg>
+                </span>
+              </div>
+              <h3 class="service-title">Pediatric Dentistry</h3>
+              <p class="service-desc">Gentle, specialized care for children of all ages.</p>
+              <ul class="service-list">
+                <li>Child Checkups</li>
+                <li>Fluoride Treatments</li>
+                <li>Sealants</li>
+                <li>Early Orthodontics</li>
+              </ul>
+              <hr class="divider">
+              <div class="card-footer">
+                <span class="price">From $50</span>
+                <a href="#" class="book-link">Book Now</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-6">
+            <div class="service-card">
+              <div class="icon-box">
+                <span class="icon"><svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="#000000"
+                    viewBox="0 0 256 256">
+                    <path
+                      d="M176,232a8,8,0,0,1-8,8H88a8,8,0,0,1,0-16h80A8,8,0,0,1,176,232Zm40-128a87.55,87.55,0,0,1-33.64,69.21A16.24,16.24,0,0,0,176,186v6a16,16,0,0,1-16,16H96a16,16,0,0,1-16-16v-6a16,16,0,0,0-6.23-12.66A87.59,87.59,0,0,1,40,104.49C39.74,56.83,78.26,17.14,125.88,16A88,88,0,0,1,216,104Zm-16,0a72,72,0,0,0-73.74-72c-39,.92-70.47,33.39-70.26,72.39a71.65,71.65,0,0,0,27.64,56.3A32,32,0,0,1,96,186v6h64v-6a32.15,32.15,0,0,1,12.47-25.35A71.65,71.65,0,0,0,200,104Zm-16.11-9.34a57.6,57.6,0,0,0-46.56-46.55,8,8,0,0,0-2.66,15.78c16.57,2.79,30.63,16.85,33.44,33.45A8,8,0,0,0,176,104a9,9,0,0,0,1.35-.11A8,8,0,0,0,183.89,94.66Z">
+                    </path>
+                  </svg>
+                </span>
+              </div>
+              <h3 class="service-title">Teeth Whitening</h3>
+              <p class="service-desc">Professional whitening treatments for a brighter, more confident smile.</p>
+              <ul class="service-list">
+                <li>In-Office Whitening</li>
+                <li>Take-Home Kits</li>
+                <li>Laser Whitening</li>
+                <li>Touch-Up Treatments</li>
+              </ul>
+              <hr class="divider">
+              <div class="card-footer">
+                <span class="price">From $299</span>
+                <a href="#" class="book-link">Book Now</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-6">
+            <div class="service-card">
+              <div class="icon-box">
+                <span class="icon"><svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="#000000"
+                    viewBox="0 0 256 256">
+                    <path
+                      d="M157.73,113.13A8,8,0,0,1,159.82,102L227.48,55.7a8,8,0,0,1,9,13.21l-67.67,46.3a7.92,7.92,0,0,1-4.51,1.4A8,8,0,0,1,157.73,113.13Zm80.87,85.09a8,8,0,0,1-11.12,2.08L136,137.7,93.49,166.78a36,36,0,1,1-9-13.19L121.83,128,84.44,102.41a35.86,35.86,0,1,1,9-13.19l143,97.87A8,8,0,0,1,238.6,198.22ZM80,180a20,20,0,1,0-5.86,14.14A19.85,19.85,0,0,0,80,180ZM74.14,90.13a20,20,0,1,0-28.28,0A19.85,19.85,0,0,0,74.14,90.13Z">
+                    </path>
+                  </svg>
+                </span>
+              </div>
+              <h3 class="service-title">Periodontal Care</h3>
+              <p class="service-desc">Specialized treatment for gum disease and periodontal health.</p>
+              <ul class="service-list">
+                <li>Deep Cleaning</li>
+                <li>Gum Surgery</li>
+                <li>Maintenance Care</li>
+                <li>Bone Grafting</li>
+              </ul>
+              <hr class="divider">
+              <div class="card-footer">
+                <span class="price">From $150</span>
+                <a href="#" class="book-link">Book Now</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="insurance-section py-5">
+      <div class="container insurance-wrapper text-center">
+        <div class="insurance-icon">
+          <svg width="40" height="40" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M12 3L17 5C17 11 15 15 12 18C9 15 7 11 7 5L12 3Z" stroke="#1F4CFF" stroke-width="2"
+              stroke-linecap="round" stroke-linejoin="round" />
+          </svg>
+        </div>
+
+        <h2 class="insurance-title">Insurance &amp; Payment Options</h2>
+
+        <p class="insurance-subtitle">
+          We accept most major insurance plans and offer flexible payment options to make
+          quality dental care accessible to everyone.
+        </p>
+
+        <div class="row g-4 justify-content-center mt-3">
+          <div class="col-md-5">
+            <div class="insurance-card">
+              <h5 class="insurance-card-title">Insurance</h5>
+              <p class="insurance-card-text">We work with most major providers</p>
+            </div>
+          </div>
+
+          <div class="col-md-5">
+            <div class="insurance-card">
+              <h5 class="insurance-card-title">Financing</h5>
+              <p class="insurance-card-text">Flexible payment plans available</p>
+            </div>
+          </div>
+
+          <div class="col-md-5">
+            <div class="insurance-card">
+              <h5 class="insurance-card-title">Membership</h5>
+              <p class="insurance-card-text">Special rates for uninsured patients</p>
+            </div>
+          </div>
+
+          <div class="mt-4">
+            <a href="loginBook.html" class="appointment-btn insurance-btn">
+              Schedule Your Visit
+            </a>
+          </div>
+        </div>
+    </section>
+    <!-- FOOTER -->
+    <footer class="site-footer">
+      <div class="container footer-top">
+        <div class="footer-col">
+          <h4>QuickSmile Dental</h4>
+          <p>Your Smile, Our Priority</p>
+          <p>
+            Providing exceptional dental care with a focus on
+            patient comfort and the latest technology.
+          </p>
+        </div>
+
+        <br></br>
+
+        <div class="footer-col">
+          <h4>Contact Us</h4>
+          <p>123 Dental Street<br>Suite 100<br>City, State 12345</p>
+          <p>(555) 0199<br>info@quicksmile.com</p>
+        </div>
+
+        <div class="footer-col">
+          <h4>Office Hours</h4>
+          <p>Monday - Friday 8:00 AM - 6:00 PM</p>
+          <p>Saturday 9:00 AM - 2:00 PM</p>
+          <p>Sunday Closed</p>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>2025 QuickSmile Dental. All rights reserved.</p>
+      </div>
+    </footer>
+  </section>
+  <script src="../script.js"></script>
+</body>
+
+</html>

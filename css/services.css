@@ -1,0 +1,172 @@
+.services-hero {
+    background: #1F4CFF; /* Görseldeki mavi ton */
+    margin-top: 0px !important;
+    padding-top: 90px !important;
+    padding-bottom: 80px !important;
+}
+
+.appointment-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    background: #ffffff;
+    border-radius: 12px;
+    padding: 12px 32px;
+    font-size: 16px;
+    font-weight: 600;
+    color: #1F4CFF;
+    text-decoration: none;
+    border: 2px solid #C9D4FF;
+    box-shadow: 0 4px 0 #1a40d6;
+    transition: 0.2s ease;
+}
+
+.appointment-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 0 #1537a8;
+}
+
+.icon {
+    font-size: 18px;
+    color: #1F4CFF;
+}
+
+
+.service-card {
+    background: #ffffff;
+    border-radius: 22px;
+    padding: 32px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+    border: 1px solid #e6e9ef;
+    height: 100%;
+}
+
+.icon-box {
+    width: 60px;
+    height: 60px;
+    background: #e8efff;
+    border-radius: 14px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.icon {
+    font-size: 26px;
+    color: #1F4CFF;
+}
+
+.service-title {
+    color: #0A2A6B;
+    font-size: 20px;
+    font-weight: 700;
+    margin-bottom: 14px;
+}
+
+.service-desc {
+    color: #555;
+    font-size: 16px;
+    margin-bottom: 16px;
+}
+
+.service-list {
+    color: #444;
+    margin-left: 20px;
+    margin-bottom: 28px;
+}
+
+.divider {
+    border: none;
+    border-top: 1px solid #dcdcdc;
+    margin-bottom: 18px;
+    margin-top: 10px;
+}
+
+.card-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.price {
+    color: #1F4CFF;
+    font-weight: 600;
+}
+
+.book-link {
+    color: #1F4CFF;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.book-link:hover {
+    text-decoration: underline;
+}
+
+.insurance-section {
+    background: #E8F2FF;
+    padding-top: 60px;
+    padding-bottom: 70px;
+}
+
+.insurance-wrapper {
+    max-width: 820px;
+    margin: 0 auto;
+}
+
+/* Shield ikon kutusu */
+.insurance-icon {
+    width: 64px;
+    height: 64px;
+    border-radius: 20px;
+    background: #E0ECFF;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 20px;
+}
+
+/* Başlıklar */
+.insurance-title {
+    font-size: 22px;
+    font-weight: 600;
+    margin-bottom: 14px;
+    color: #222;
+}
+
+.insurance-subtitle {
+    max-width: 720px;
+    margin: 0 auto 24px;
+    font-size: 16px;
+    font-weight: 600;
+    color: #555;
+}
+
+/* Kartlar */
+.insurance-card {
+    background: #ffffff;
+    border-radius: 18px;
+    padding: 22px 28px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.06);
+    border: 1px solid #E1E4EC;
+}
+
+.insurance-card-title {
+    font-size: 18px;
+    font-weight: 600;
+    color: #1F4CFF;
+    margin-bottom: 8px;
+}
+
+.insurance-card-text {
+    font-size: 14px;
+    color: #555;
+    margin: 0;
+}
+
+/* Buton (mevcut appointment-btn üzerine küçük ek) */
+.insurance-btn {
+    margin-top: 8px;
+}
+
