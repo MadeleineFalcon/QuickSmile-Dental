@@ -48,58 +48,152 @@
     <h3 style="color:#193CB8; text-align: center; padding-top:20px;">Book Your Appointment</h3>
     <p style="color:#46484F; text-align: center; padding-top: 20px; font-size:18px">Choose your preferred date, time,
       and dentist. We'll confirm your appointment shortly.</p>
-    <div class="container mt-5 px-5">
-      <div class="card p-4">
+    <!--Main card-->
+    <div class="container mt-5 px-5" style="padding-bottom: 100px;">
+      <div class="card p-4" >
         <div class="row book">
-          <div class="col-md-6">
-
+          <!--field col-->
+          <div class="col-md-7 h-100">
             <h5 class="form-head">Personal Information</h5>
-            
+            <div class="mb-3">
               <label class="form-label">Full Name*</label>
               <input type="text" class="form-control" placeholder="Enter your name">
-            
+            </div>
+
+            <div class="mb-3">
               <label class="form-label">Email*</label>
               <input type="email" class="form-control" placeholder="Enter your email">
+            </div>
 
+            <div class="mb-3">
               <label class="form-label">Phone Number*</label>
-              <input type="number" class="form-control" placeholder="Enter your Phone number">
-
-              <h5 class="form-head" style="padding: top 20px;">Appointment Details</h5>
-
-              <label class="form-label">Service*</label>
-              <select class="form-select">
-                <option>Select a service</option>
-                <option>Consultation</option>
-                <option>Follow-up Appointment</option>
-                <option>Other</option>
-              </select>
-
-              <label class="form-label">Preferred Dentist*</label>
-              <select class="form-select">
-                <option>Select a dentist</option>
-                <option>Dr. Dawood</option>
-                <option>Dr. Rahman</option>
-                <option>Dr. Haslak</option>
-                <option>Dr. Falcon</option>
-              </select>
-
-              <label class="form-label">Addtional Notes</label>
-
+              <input type="text" class="form-control" placeholder="Enter your Phone number">
+            </div>
           </div>
-          <div class="col">
 
+          <!--Calendar col-->
+          <div class="col-md-5 h-100">
+            <h5 class="form-head">Select Appointment Date</h5>
+            <div class="calendar">
+              <div class="calendar-header">
+                <div class="calendar-arrow">◀</div>
+                <h2>December 2025</h2>
+                <div class="calendar-arrow">▶</div>
+              </div>
+
+              <div class="calendar-grid">
+                <!--days-->
+                <div class="day-header">Sun</div>
+                <div class="day-header">Mon</div>
+                <div class="day-header">Tue</div>
+                <div class="day-header">Wed</div>
+                <div class="day-header">Thu</div>
+                <div class="day-header">Fri</div>
+                <div class="day-header">Sat</div>
+
+                <!--month nums-->
+                <div class="day-empty"></div>
+                <div class="day-blocked" onclick="selectDay(this)">1</div>
+                <div class="day-blocked" onclick="selectDay(this)">2</div>
+                <div class="day" onclick="selectDay(this)">3</div>
+                <div class="day" onclick="selectDay(this)">4</div>
+                <div class="day" onclick="selectDay(this)">5</div>
+                <div class="day" onclick="selectDay(this)">6</div>
+
+                <div class="day" onclick="selectDay(this)">7</div>
+                <div class="day" onclick="selectDay(this)">8</div>
+                <div class="day" onclick="selectDay(this)">9</div>
+                <div class="day" onclick="selectDay(this)">10</div>
+                <div class="day" onclick="selectDay(this)">11</div>
+                <div class="day" onclick="selectDay(this)">12</div>
+                <div class="day" onclick="selectDay(this)">13</div>
+
+                <div class="day" onclick="selectDay(this)">14</div>
+                <div class="day" onclick="selectDay(this)">15</div>
+                <div class="day" onclick="selectDay(this)">16</div>
+                <div class="day" onclick="selectDay(this)">17</div>
+                <div class="day" onclick="selectDay(this)">18</div>
+                <div class="day" onclick="selectDay(this)">19</div>
+                <div class="day" onclick="selectDay(this)">20</div>
+
+                <div class="day" onclick="selectDay(this)">21</div>
+                <div class="day" onclick="selectDay(this)">22</div>
+                <div class="day" onclick="selectDay(this)">23</div>
+                <div class="day" onclick="selectDay(this)">24</div>
+                <div class="day" onclick="selectDay(this)">25</div>
+                <div class="day" onclick="selectDay(this)">26</div>
+                <div class="day" onclick="selectDay(this)">27</div>
+
+                <div class="day" onclick="selectDay(this)">28</div>
+                <div class="day" onclick="selectDay(this)">29</div>
+                <div class="day" onclick="selectDay(this)">30</div>
+                <div class="day" onclick="selectDay(this)">31</div>
+                <div class="day-empty"></div>
+                <div class="day-empty"></div>
+                <div class="day-empty"></div>
+              </div>
+            </div>
+            </div>
+          </div> <!--end cal col-->
+          
+            <div class="row book" style="padding-bottom: 30px;;">
+              <!--appointment details-->
+              <div class="col-md-7 h-100">
+                <h5 class="form-head" ">Appointment Details</h5>
+                
+                <div class="mb-3">
+                  <label class="form-label">Service*</label>
+                  <select class="form-select">
+                    <option>Select a service</option>
+                    <option>Consultation</option>
+                    <option>Follow-up Appointment</option>
+                    <option>Other</option>
+                  </select>
+                </div>
+
+                <div class="mb-3">
+                  <label class="form-label">Preferred Dentist*</label>
+                  <select class="form-select">
+                    <option>Select a dentist</option>
+                    <option>Dr. Dawood</option>
+                    <option>Dr. Rahman</option>
+                    <option>Dr. Haslak</option>
+                    <option>Dr. Falcon</option>
+                  </select>
+                </div>
+
+                <div class="mb-3">
+                  <label class="form-label">Addtional Notes</label>
+                  <textarea class="form-control" id="description" rows="5"></textarea>
+                </div>
+              </div>
+
+              <!--Time slots-->
+              <div class="col-md-5 h-100">
+                <div class="time">
+                  <h5 class="form-head">Pick a Time</h5>
+                  <div class="time-slots-container">
+                    <button class="btn btn-outline-secondary time-slot"> 9:00 am</button>
+                    <button class="btn btn-outline-secondary time-slot"> 10:00 am</button>
+                    <button class="btn btn-outline-secondary time-slot"> 11:00 am</button>
+                    <button class="btn btn-outline-secondary time-slot"> 1:00 pm</button>
+                    <button class="btn btn-outline-secondary time-slot"> 2:00 pm</button>
+                    <button class="btn btn-outline-secondary time-slot"> 3:00 pm</button>
+                    <button class="btn btn-outline-secondary time-slot"> 4:00 pm</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!--Divider-->
+            <div class="row" style="padding:0 40px;">
+              <hr style="padding-bottom:15px;">
+            </div>
+            <!--Button-->
+            <div class="row" style="padding:0 40px;">
+              <a href="book.html" class="btn btn-primary">Book Appointment</a>
+            </div>
           </div>
         </div>
-        <!--Divider-->
-        <div class="row">
-
-        </div>
-        <!--Button-->
-        <div class="row">
-          <a href="book.html" class="btn btn-primary btn-light text-primary">Book an Appointment</a>
-        </div>
-      </div>
-    </div>
   </section>
 
   <script src="../script.js"></script>
