@@ -34,6 +34,10 @@ function handleRegister(event) {
   return false;
 }
 
+function logout() {
+  sessionStorage.removeItem('isLoggedIn');
+  window.location.href = 'home.html';
+}
 document.addEventListener('DOMContentLoaded', function() {
   updateNavigation();
   
@@ -47,6 +51,12 @@ document.addEventListener('DOMContentLoaded', function() {
   const registerForm = document.querySelector('form[action="register.html"]');
   if (registerForm) {
     registerForm.addEventListener('submit', handleRegister);
+  }
+
+  //listener for logout
+  const logoutBtn = document.getElementById('logoutBtn');
+  if (logoutBtn) {
+    logoutBtn.addEventListener('click', logout);
   }
 });
 
